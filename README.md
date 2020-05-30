@@ -6,9 +6,12 @@ position.We use image processing algorithms and advanced decision making abiliti
 
 
 # WORKING
+Our robotic arm uses Robotic Operating System (ROS) framework over a distributed hardware platform. ROS is a software framework for robot software development which provides operating system type functionality.
 
+We use an Arduino Mega Microcontroller to interface the motor driver and driver encoder.We also use a Raspberry Pi 3 Model B as the node-master,it runs the ROS nodes for the operation of the arm by interfacing with Arduino and depth sensor and is responsible for
+registration of all ROS nodes in the network.
 
-
+Our humanoid arm uses the open source software of the “You Only Look Once (YOLO)” real time object detection project.Object detection algorithms are usually trained to recognize objects from sets of features that can robustly define the objects.During the recognition phase the YOLO algorithm analyses the images globally dividing them into an SxS grid and carrying out object detection inside each cell of the grid.
 
 ![](hand.png)
 
